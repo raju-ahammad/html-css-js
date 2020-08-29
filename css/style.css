@@ -1,7 +1,48 @@
+@import "utilities.css";
+
 :root {
     --primary: #3dcfd3;
     --dark: #161616;
     --ternary: #898989;
     --pure: #ffffff;
     --light: #f2f2f2;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing: antialiased;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    background: var(--dark);
+    height: 500px;
+}
+
+.container {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.nav-element a {
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+.nav-element a:hover {
+    color: var(--primary);
+}
+header nav {
+    padding: 2rem 0;
+}
+nav .logo {
+    margin-right: 3rem;
 }
