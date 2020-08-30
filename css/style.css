@@ -121,17 +121,79 @@ section {
     display: flex;
 }
 .social-link a{
-    background: var(--dark);
     display: flex;
     justify-content:center;
     align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
     transition: all .3s ease;
     margin-right: 1.2rem;
 }
 
-.social-link a:hover{
-    background: var(--primary);
+
+
+.social-link img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* **************services section ************ */
+
+.section-heading {
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5rem;
+}
+.section-heading + p {
+    color: var(--ternary);
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.section-heading span {
+    color: var(--primary);
+}
+
+.services {
+    background: var(--light);
+}
+
+.services .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+   
+}
+
+.services .card-wrapper .card {
+
+    background: var(--pure);
+    position: relative;
+    padding-top: 4rem;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.services .card-wrapper .card img {
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.services .card-wrapper .card h2 { 
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+.services .card-wrapper .card p {
+    color: var(--ternary);
+    line-height: 1.6;
+}
+
+.services .card-wrapper .card:hover {
+    background: var(--dark);
+}
+.services .card-wrapper .card:hover h2, .services .card-wrapper .card:hover p {
+    color: var(--pure);
 }
