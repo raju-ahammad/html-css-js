@@ -21,7 +21,7 @@ body {
 
 header {
     background: var(--dark);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 85%, 0 100%);
 }
 
 .container {
@@ -45,6 +45,10 @@ header nav {
 }
 nav .logo {
     margin-right: 3rem;
+    
+}
+.logo h2{
+    text-align: center;
 }
 
 /* ************* Hero section ************* */
@@ -80,4 +84,54 @@ nav .logo {
 }
 .hero .right button {
     margin-bottom: 5rem;
+}
+
+section {
+    padding: 6rem 12rem;
+    
+}
+
+.section-left img {
+    height: 450px;
+} 
+
+.section-right h1 span {
+    color: var(--primary);
+}
+
+.section-right h1 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+
+}
+
+.section-right h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.section-right p {
+    line-height: 1.8;
+    color: var(--ternary);
+    margin-bottom: 2rem;
+
+}
+
+.social-link {
+    display: flex;
+}
+.social-link a{
+    background: var(--dark);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all .3s ease;
+    margin-right: 1.2rem;
+}
+
+.social-link a:hover{
+    background: var(--primary);
 }
