@@ -212,3 +212,19 @@ section.freelancer h2 {
 section.freelancer p {
     margin-bottom: 1rem;
 }
+
+
+section.review .slide img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+.slide {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0.6rem;
+}
